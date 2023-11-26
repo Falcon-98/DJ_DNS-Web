@@ -1,0 +1,886 @@
+/*
+Theme Name: CityCab
+Author: DHsign
+Version: 1.0.0
+Description: A CityCab - Taxi Company Responsive Html Template Made by DHsign
+*/
+
+/*---------------------------------*/
+/* Grid Blocks                     */
+/* Custom page CSS                 */
+/* Main navigation                 */
+/* Full Width Carousel Container   */
+/* Choose Car                      */
+/* Book Taxi                       */
+/* Download App                    */
+/* Testimonials                    */
+/* Lost Property                   */
+/* Taxi Driver For Hire            */
+/* Taxis For Sale                  */
+/* Taxi Advertising                */
+/* Bottom                          */
+/* Footer                          */
+/* Who Are We                      */
+/* City Coverage                   */
+/* Our Vehicles                    */
+/* Our Drivers                     */
+/* We Are City Cab                 */
+/* Contact                         */
+/* F.A.Q.                          */
+/* Blog                            */
+/* Buttons                         */
+/* Icons                           */
+/* Typography                      */
+/* Error Page                      */
+/*---------------------------------*/
+
+/*---------------------------------*/
+/*           Grid Blocks           */
+/*---------------------------------*/
+.page-wrapper { position:relative; z-index:1000; background:#fff; overflow: hidden;   font-family: "Montserrat Alternates";}
+
+
+/*-------------------------------------------------- */
+/* Custom page CSS                                   */
+/*-------------------------------------------------- */
+
+a:not(.btn) {
+  color: #f7b926;
+}
+a:not(.btn):hover {
+  color: #b07e07;
+}
+body {
+  color: #000;
+}
+body.bg {
+  background: #fff;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+h1, h2, h3, h4 {
+	color: #000;
+}
+.uk-text-black {color: #000;}
+.uk-text-white {color: #fff;}
+.uk-text-yellow {color: #f7b926;}
+.uk-text-a2 {color: #a2a2a2;}
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+  background-image: none;
+  border: none;
+  text-shadow: none;
+  border-bottom-color: transparent;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.btn:hover {
+  text-decoration: none;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 16px;
+  line-height: normal;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.btn-lg [class^="icon-"] {
+  margin-top: 2px;
+}
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.btn-sm [class^="icon-"] {
+  margin-top: 0;
+}
+.btn-xs {
+  padding: 5px 10px;
+  font-size: 11px;
+  line-height: 16px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255,255,255,0.75);
+}
+.btn {
+  border-color: #c5c5c5;
+  border-color: rgba(0,0,0,0.15) rgba(0,0,0,0.15) rgba(0,0,0,0.25);
+}
+.btn-default {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  text-shadow: none;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+}
+.btn-primary {
+  background: #f7b926;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #f8c13f;
+}
+.btn-warning {
+  background: #ff8400;
+}
+.btn-warning:hover,
+.btn-warning:focus {
+  background: #b25c00;
+}
+.btn-danger {
+  background: #ff0000;
+}
+.btn-danger:hover,
+.btn-danger:focus {
+  background: #8a0000;
+}
+.btn-success {
+  background: #69bd43;
+}
+.btn-success:hover,
+.btn-success:focus {
+  background: #44a219;
+}
+.btn-info {
+  background: none;
+  border: 1px solid #f7b926;
+  color: #999;
+  text-shadow: none;
+}
+.btn-info:hover,
+.btn-info:focus {
+  background: none;
+  border: 1px solid #999;
+  color: #f7b926;
+}
+.btn-inverse {
+  background: #000;
+  color: #fff;
+}
+.btn-inverse:hover,
+.btn-inverse:focus {
+  background: #262626;
+  color: #fff;
+}
+button.btn,
+input[type="submit"].btn {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button.btn.btn-lg,
+input[type="submit"].btn.btn-lg {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+button.btn.btn-sm,
+input[type="submit"].btn.btn-sm {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+button.btn.btn-xs,
+input[type="submit"].btn.btn-xs {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.btn-link,
+.btn-link:active {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #049cdb;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-link:hover {
+  color: #000000;
+  text-decoration: underline;
+  background-color: transparent;
+}
+a,
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.header { letter-spacing: -2px;}
+
+/*-------------------------------*/
+/* Set the main navigation here  */
+/*-------------------------------*/
+.header-wrapper { margin: 0 auto; background: none repeat scroll 0 0 #fff; transition: all 0.7s ease-out 0s;}
+.col-fullsize { padding: 0px;}
+.f-menu { border-bottom: 1px solid #ededed; display: block; padding: 0px; position: fixed; top: 0; transition: all 0.7s ease-out 0s; width: 100%; z-index: 999;}
+.main-navigation{ position:relative;}
+.col-pad-0 {padding-right: 0px; padding-left: 0px;}
+/* Set the navbar here */
+.navbar { position: relative;  min-height: 50px;  margin-bottom: 0px;  font-weight: 400;  border-bottom: 1px solid #EDEDED;  color:#000;}
+/* Set the navbar text here */
+.navbar-text { margin: 0 auto;  padding: 39px 0px;  font-size: 31.5px;}
+.navbar-text-fixed { padding: 16px 0px;}
+/* Set the navbar brand here */
+.navbar-header { margin: 0 auto; padding-top: 34px;}
+.navbar-header-fixed {padding-top: 11px;}
+.navbar-brand { float: left;  height: 53px;  margin: 0 auto; font-size: 18px; padding: 0px; line-height: 20px;}
+.navbar-brand-fixed { padding: 0px;}
+/* Center the menu here */
+.navbar-nav-center{ float:none; margin: 0 auto; padding: 41px;  display: table;  font-size: 16px;  table-layout: fixed;}
+.navbar-nav-center-fixed{padding: 18px;}
+/* Set the background color of navbar here */
+.navbar-default { background-color: #fff;}
+/* Set the color of menu text here */
+.navbar-default .navbar-text { color: #000;}
+/* Set the color and size of menu buttons here */  
+.navbar-default .navbar-nav > li > a { color: #000;	 padding: 10px 25px;}
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{  background-color: #f7b926; color: #fff; border-radius: 100px;}
+/* Set the color and shape of menu buttons here */  
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background-color: #f7b926; color: #fff;	border-radius: 100px;}
+.navbar-default .navbar-toggle {position: absolute; cursor: pointer; top: 30px; right: 57px; width: 48px; height: 48px; font-size: 18px; float: none; text-align: center;  padding: 9px 10px; background-color: #32313b; color: #fff;  border: none; border-radius: 0;}
+.navbar-default .navbar-toggle:focus {outline: none;}
+.navbar-default .navbar-toggle:after {content:'\f0c9'; font-family: FontAwesome; font-size: 25px; }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { color: #fff; background-color: #f7b926;}
+.uk-nav-navbar > li > a { color: #000;}
+.uk-nav-navbar > li > a:hover, .uk-nav-navbar > li > a:focus { background: #f7b926; color: #fff;}
+/* Full Width Gap */
+.gap-fullsize {background-image: url("images/taxi-stripe.jpg"); min-height: 12px; width: 100% ; position: relative;}
+
+/*-------------------------------*/
+/* Full Width Carousel Container */
+/*-------------------------------*/
+.container-fullsize {width:100% ; position:relative; padding: 0px;}
+.owl-carousel .item{ background: #fff;  text-align: center;  height: 600px;	margin-top: 0px;}
+.owl-carousel img {  position: absolute;  top: 0;  left: 0;  min-width: 100%;  height: 600px;}
+.carousel-caption {  top: 25%;  right: 10%;  left: 10%;}
+.carousel-caption-phone {  top: 0%;}
+.owl-carousel .carousel-caption img {  position:relative;  width: auto;  height: 500px;} 
+.owl-carousel .carousel-caption .table > tbody > tr > td {  vertical-align: middle;}
+/* Carousel Responsive CSS */
+@media (max-width: 979px) {
+  .owl-carousel .item {    height: 500px;  }
+  .owl-carousel img {    width: auto;    height: 500px;  }
+  .owl-carousel .carousel-caption img {    width: auto;    height: 400px;  }
+}
+@media (max-width: 767px) {   
+  .owl-carousel .item {    height: 380px;  }
+  .owl-carousel img {    width: auto;    height: 380px;  }	
+  .owl-carousel .carousel-caption img {    width: auto;    height: 280px;  }
+} 
+/* Carousel Text */
+.lead {  margin-bottom: 0px;  font-size: 30px;  font-weight: 300;  line-height: 0.8;}
+.lead-large {  margin-bottom: 0px;  font-size: 42px;  font-weight: 300;  line-height: 0.8;}
+@media (min-width: 768px) {  
+  .lead {    font-size: 42px;  }
+  .lead-large  {    font-size: 64px;  }
+}
+/* Carousel Buttons */
+.os-btn{ background-color: transparent; border: 2px solid #f7b926; border-radius: 100px; box-shadow: none; padding: 10px 25px; font-size: 18px; margin-top: 10px;}
+.os-btn-white { border-color: #fff; color: #fff;}
+.os-btn-black { border-color: #000; color: #000;}
+/* Styling Carousel's Next and Prev buttons */
+.owl-theme .owl-controls { margin-top: 0;}
+.owl-theme .owl-controls .owl-page span { background: #f7b926;}
+.owl-theme .owl-controls .owl-buttons div { background: #fff; color: #aaa; padding: 20px 15px;}
+.owl-prev { float: left; position: absolute; top: 45%; left: 5px;}
+.owl-next { float: right; position: absolute; top: 45%; right: 5px;}
+.owl-pagination { display: none;}
+
+/*--------------------*/
+/* Styling Choose Car */
+/*--------------------*/
+.choose-car {padding-top: 35px; padding-bottom: 35px;}
+.header-car { padding: 0px 0px 25px; text-align: center; font-weight: 300;}
+.header-car::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+/* Set the background color of nav-tabs here */
+.cc-nav-tabs { background-color: #fff; border-bottom: 0px;}
+/* Center Car Tabs here */
+.nav-tabs-center{ float:none; margin: 0 auto; padding: 0px;  display: table;  font-size: 14px;  table-layout: fixed;}
+/* Set the color and size of tabs here */  
+.cc-nav-tabs > li > a { color: #f7b926;	padding: 6px 15px; border: 2px solid #F7B926;  border-radius: 100px;}
+/* Set the color and shape of tabs here */  
+.cc-nav-tabs > li.active > a, .cc-nav-tabs > li.hover > a, .cc-nav-tabs > li.focus > a { background-color: #f7b926; color: #fff; }
+.cc-nav-tabs > .active > a, .cc-nav-tabs > .active > a:hover, .cc-nav-tabs > .active > a:focus { background-color: #f7b926; color: #fff;	border-radius: 100px;}
+.cc-nav-tabs > li > a:active, .cc-nav-tabs > li > a:hover, .cc-nav-tabs > li > a:focus{  background-color: #f7b926; color: #fff; border-radius: 100px;}
+.cc-nav-tabs > li > a, .cc-nav-tabs > li > a:hover, .cc-nav-tabs > li > a:focus, .cc-nav-tabs > li.active > a, .cc-nav-tabs > li.active > a:hover,.cc-nav-tabs > li.active > a:focus {border-color: #f7b926; border-radius: 100px;}
+.cc-nav-tabs > li.active > a, .cc-nav-tabs > li.active > a:hover, .cc-nav-tabs > li.active > a:focus { color: #fff; cursor: default; background-color: #f7b926; border: 2px solid #f7b926;}
+.uk-panel-box-primary { color: #fff; background: #f7b926; border: 1px solid #fff; border-radius: 50px;}
+.uk-panel-box-primary  h3{ font-size: 24px; font-weight: 700; line-height: normal;}
+
+/*------------------------------*/
+/* Styling Book Taxi            */
+/*------------------------------*/
+.book-taxi { background-image: url("images/citydrop.jpg"); background-repeat: repeat-y; background-position: center top; color: #fff; margin: 0px; padding-top: 35px; padding-bottom: 35px;}
+.book-now { padding: 0px 0px 25px; text-align: center; font-weight: 300; color: #fff;}
+.book-now::after { margin: -1px auto; background-image: url("images/taxi2.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.radio{ color: #f7b926;}
+.book-taxi .form-horizontal .form-group { margin-right: 0px; margin-left: 0px;}
+.label-left{ padding-right:0px; text-align:left !important; color: #f7b926;}
+.book-taxi .form-control { color: #fff; background: #1a1a1a; border: 1px solid #111;}
+.book-taxi .form-control:focus, .form-control.active { -webkit-box-shadow: 0 0 2px #f7b926; -moz-box-shadow: 0 0 2px #f7b926; box-shadow: 0 0 2px #f7b926;}
+/* Datepicker */
+.ui-widget-header { background-color: #f7b926; color: #fff;}
+.ui-widget-header a { background-color: #f7b926; color :#fff;}
+.ui-icon, .ui-widget-content .ui-icon, .ui-widget-header .ui-icon { background-image: url("images/ui-icons_222222_256x240.png");}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background-color: #e6e6e6}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { background-color: #f7b926; color :#fff;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight { background-color: #fbf9ee}
+
+/*------------------------------*/
+/* Styling Download App         */
+/*------------------------------*/
+.download-app {padding-top: 35px; padding-bottom: 35px;}
+.da-span { background:#f7b926; color:#FFF;}
+.p-mar-5 { margin-top: -5px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.p-mar-15 { margin-top: -15px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.da-a {color: #fff; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+/*------------------------------*/
+/* Styling Testimonials         */
+/*------------------------------*/
+.nav-tabs {
+  border-bottom: none;
+}
+.vertical-testimonials {background: url(images/testimonials.jpg); padding-top: 35px; padding-bottom: 35px;} 
+.header-testimonials { padding: 65px 0px 25px 0px; text-align: center; font-weight: 300; color: #fff;}
+.header-testimonials::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.nav-tabs-center-testimonials{ float:none; margin: 0 auto; margin-bottom: 65px; padding: 0px;  display: table;  font-size: 14px;  table-layout: fixed;  background: transparent; background-color: transparent;}
+/* Set the color and size of tabs here */  
+.sp-nav-tabs > li > a { background-color: #fff; color: #000;	padding: 6px 15px; border: 2px solid #fff;  border-radius: 100px;}
+/* Set the color and shape of tabs here */  
+.sp-nav-tabs > li.active > a, .sp-nav-tabs > li.hover > a, .sp-nav-tabs > li.focus > a {background-color: #000; color: #fff;}
+.sp-nav-tabs > .active > a, .sp-nav-tabs > .active > a:hover, .sp-nav-tabs > .active > a:focus { background-color: #000; color: #fff;	border-radius: 100px;}
+.sp-nav-tabs > li > a:active, .sp-nav-tabs > li > a:hover, .sp-nav-tabs > li > a:focus{  background-color: #000; color: #fff; border-radius: 100px;}
+.sp-nav-tabs > li > a, .sp-nav-tabs > li > a:hover, .sp-nav-tabs > li > a:focus, .sp-nav-tabs > li.active > a, .sp-nav-tabs > li.active > a:hover, .sp-nav-tabs > li.active > a:focus {border-color: #fff; border-radius: 100px;}
+.sp-nav-tabs > li.active > a, .sp-nav-tabs > li.active > a:hover, .sp-nav-tabs > li.active > a:focus { color: #fff; background-color: #000; border: 2px solid #000;}
+
+/*------------------------------*/
+/* Styling Lost Property        */
+/*------------------------------*/
+.lost-property{padding-top: 35px; padding-bottom: 35px;}
+.header-lost { padding: 0px 0px 25px; text-align: center; font-weight: 300;}
+.header-lost::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.header-text, .header-p { color: #a2a2a2;}
+.header-p  {margin-top: -5px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+/*------------------------------*/
+/* Styling Taxi Driver For Hire */
+/*------------------------------*/
+.vertical-driver {background: url('images/city.jpg'); background-position: center top; background-repeat: repeat; background-size: 2500px auto; bottom: -500px; display: block; left: -200px; padding-top: 100px; padding-bottom: 100px;}
+.header-driver { padding: 0px 0px 25px 0px; text-align: center; font-weight: 300; color: #fff;}
+.header-driver::after { margin: -1px auto; background-image: url("images/taxi2.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 35px;}
+.vd-uk-overlay-area-content p {color: #000; line-height: 1.0; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.vd-uk-overlay-area-content p  > a {font-size: 16px; font-weight: 600; font-family: "Montserrat Alternates";}
+.vd-uk-overlay-area-content p  > a.btn-sm {font-size: 14px; font-weight: 400; font-family: "Montserrat Alternates";}
+
+/*------------------------------*/
+/* Styling Taxis For Sale       */
+/*------------------------------*/
+.taxis-sale {padding-top: 35px; padding-bottom: 35px;}
+.sprocket-tables-container  {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.sprocket-tables-item { border: 1px solid #f7b926; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s;}
+.sprocket-tables-item:hover { -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s;}
+.sprocket-tables-price {font-family: "Montserrat Alternates";}
+.sprocket-tables-desc { background: none repeat scroll 0 0 #f7b926; color: #fff;}
+.sprocket-tables-link { background: none repeat scroll 0 0 #f7b926}
+
+/*------------------------------*/
+/* Styling Taxi Advertising     */
+/*------------------------------*/
+.advertising { margin: 0 auto;  background: none repeat scroll 0 0 #f7b926; color: #fff; padding: 35px 0px; transition: all 0.7s ease-out 0s;}
+.header-advertising { padding: 0px 0px 25px 0px; text-align: center; font-weight: 300; color: #fff;}
+.header-advertising::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.a-row {  padding: 0;}
+.a-spot { list-style: outside none none; margin: 0; padding: 0; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.a-spot li::before { content: "\f164"; font-family: FontAwesome; }
+.a-p {color: #fff; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.a-a { color: #fff;}
+
+/*------------------------------*/
+/* Styling Bottom               */
+/*------------------------------*/
+.bottom { margin: 0 auto;  background: none repeat scroll 0 0 #000; color: #fff; padding: 35px 0px; transition: all 0.7s ease-out 0s;}
+.bottom-row {  padding: 0;}
+.header-bottom { padding: 5px 0px 25px 0px; text-align: left; font-weight: 300; color: #fff;}
+.header-bottom::after {  background-image: url("images/taxi2.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.bottom-row p {color: #fff; margin: 0px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.bottom-row a {color: #fff; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+/*------------------------------*/
+/* Styling Footer               */
+/*------------------------------*/
+.footer-wrapper { background: none repeat scroll 0 0 #000; color: #fff; padding: 35px 0px; line-height: 30px; padding: 35px 0; position: relative; color: #fff; background: none repeat scroll 0 0 #0d0d0d; font-family: "Montserrat Alternates",sans-serif;}
+.footer-wrapper::after { height: 1px; left: 0; position: absolute; top: 0; width: 100%; background: none repeat scroll 0 0 #000;}
+.footer-wrapper .gap { background: none repeat scroll 0 0 #0d0d0d; min-height: 12px; width: 100% ; position: relative;}
+.footer-wrapper .btn.social { color: #fff; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 2px solid #fff; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms; transition: all 400ms; padding: 5px 12px;}
+.footer-wrapper .btn.social:hover { color: #fff; border: 2px solid #f7b926; background: #f7b926; text-decoration: none; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms; transition: all 200ms;}
+.footer-wrapper .totop i { background: none repeat scroll 0 0 #141414;  border-radius: 50px; color: #fff; font-size: 24px; padding: 10px 16px; position: relative; top: 25px;}
+.footer-wrapper .icon-caret-up { background: none repeat scroll 0 0 #141414; border-radius: 50px; color: #fff; font-size: 24px; padding: 10px 16px; position: relative; top: 25px;}
+.footer-wrapper a:not(.btn) { color: #fff;}
+.footer-wrapper a:hover { text-decoration: none; transition: all 200ms ease 0s; color: #f7b926;}
+
+/*--------------------------------------------*/
+/* Styling Who Are We                         */
+/*--------------------------------------------*/
+.professional-company {padding-top: 35px; padding-bottom: 35px;}
+.professional-company p {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.professional-company .uk-badge { border-radius: 50px; padding: 2px 8px;  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+.professional-company .uk-panel p {color: #000; margin: 0px; }
+.professional-company  p.uk-panel-p-5{ color: #a2a2a2; margin-top: -10px;}
+.professional-company .uk-progress { border: 2px solid #000; padding: 3px; border-radius: 50px;}
+.professional-company .uk-progress-bar { background: none repeat scroll 0 0 #f7b926; border-radius: 50px;}
+
+/*--------------------------------------------*/
+/* Styling City Coverage                      */
+/*--------------------------------------------*/
+.vertical-city-coverage {background: url(images/city-parallax.jpg); padding-top: 35px; padding-bottom: 35px;} 
+.header-coverage { padding: 0px 0px 25px 0px; text-align: center; font-weight: 300; color: #fff;}
+.header-coverage::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.vertical-city-coverage  p { color: #000; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.vertical-city-coverage h4 { color: #fff ;}
+
+/*--------------------------------------------*/
+/* Styling Our Vehicles                       */
+/*--------------------------------------------*/
+
+.vertical-our-vehicles {background: url(images/city-parallax2.jpg); background-position: 50% -236.6px; padding-top: 35px; padding-bottom: 35px; border-color: #fff;}
+.vertical-our-vehicles .header-vehicles { padding: 0px 0px 25px; text-align: center; font-weight: 300;}
+.vertical-our-vehicles .header-vehicles::after { margin: -1px auto; background-image: url("images/taxi.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 8px;}
+.panel-heading { padding: 0px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px;}
+.panel {border-color: #fff;}
+.panel-body  p {color: #000; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.panel-default > .panel-heading { background-color: #fff; color: #000; padding: 0px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px;}
+.btn.accord { font-size: 1.1em; line-height: 1.1em; color: #000; text-align: left; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; border: 2px solid #000; -webkit-transition: all 400ms; -moz-transition: all 400ms; -o-transition: all 400ms; transition: all 400ms; padding: 14px 25px;}
+.btn.accord:hover { color: #fff; border: 2px solid #000; background: #000; text-decoration: none; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms; transition: all 200ms;}
+.btn.accord.active { color: #fff; border: 2px solid #000; background: #000; text-decoration: none; -webkit-transition: all 200ms; -moz-transition: all 200ms; -o-transition: all 200ms; transition: all 200ms;}
+
+/*--------------------------------------------*/
+/* Styling Our Drivers                        */
+/*--------------------------------------------*/
+.horizon-our-drivers {background: url(images/city-parallax3.jpg); background-size: 1920px auto; background-position: 60% 28%; padding-top: 35px; padding-bottom: 35px;} 
+.horizon-our-drivers  p { color: #000; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.horizon-our-drivers h4 { color: #fff ;}
+.horizon-our-drivers span.circle { background-color: #fff ;}
+
+/*--------------------------------------------*/
+/* Styling We Are City Cab                    */
+/*--------------------------------------------*/
+.vertical-city-cab {background: url('images/city-parallax4.jpg'); background-position: center top; padding-top: 35px; padding-bottom: 35px;}
+.header-city-cab { padding: 0px 0px 25px 0px; text-align: center; font-weight: 300; color: #fff;}
+.header-city-cab::after { margin: -1px auto; background-image: url("images/taxi2.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; position: relative; width: 90px; top: 12px; margin-bottom: 35px;}
+.city-cab h2, .city-cab h4{color: #fff;  line-height: 40px;}
+.city-cab h2 { font-size: 31.5px;}
+
+/*--------------------------------------------*/
+/* Styling Contact                            */
+/*--------------------------------------------*/
+.contact {padding-top: 35px; padding-bottom: 35px;}
+.header-contact { margin-top: 0px; padding: 0px 0px 10px; text-align: left; font-weight: 300; color: #000;}
+.header-contact::after { background-image: url("images/taxi2.png"); background-repeat: no-repeat; display: block; height: 6px; margin-bottom: 8px; position: relative; top: 5px; width: 90px;}
+.contact legend { border: medium none; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;	color: #000; margin: 0px 0px 20px;}
+.contact .form-horizontal .control-label { text-align: left;}
+.contact .form-horizontal .form-group { margin-left: 0px; margin-right: 0px;}
+.contact .form-horizontal { margin-bottom: 25px;}
+.contact  button.btn, .contact input.btn[type="submit"] { padding: 10px 15px;}
+.contact button.btn, .contact input.btn[type="submit"] { padding-bottom: 10px; padding-top: 10px;}
+.contact .btn-primary { background: none repeat scroll 0 0 #f7b926;}
+.contact .btn { border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);}
+.contact .btn { -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-image: none; border-radius: 50px; border-style: none;  border-width: medium; cursor: pointer; display: inline-block; font-size: 14px; line-height: 20px; margin-bottom: 0; text-align: center; text-shadow: none; transition: all 400ms ease 0s; vertical-align: middle;}
+.contact .control-label { color: #f7b926; font-family: "Montserrat Alternates",sans-serif; font-weight: normal;}
+.contact input[type="text"], .contact input[type="password"], .contact input[type="datetime"], .contact input[type="datetime-local"], .contact input[type="date"], .contact input[type="month"], .contact input[type="time"], .contact input[type="week"], .contact input[type="number"], .contact input[type="email"], .contact input[type="url"], .contact input[type="search"], .contact input[type="tel"], .contact input[type="color"], .contact .uneditable-input { border: 2px solid #000; border-radius: 50px; padding: 10px; width: 100%;}
+.contact textarea{ border: 2px solid #000; border-radius: 20px; padding: 10px; width: 100%;}
+
+/*--------------------------------------------*/
+/* Styling F.A.Q.                             */
+/*--------------------------------------------*/
+.faq {padding-top: 35px; padding-bottom: 35px;}
+.header-fac { padding: 0px 0px 10px; text-align: left; font-weight: 300; font-family: "Montserrat Alternates",sans-serif;}
+.faq p  {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;}
+.faq .btn-inverse { color: #fff;}
+.faq h3::after { background-image: url("images/taxi2.png"); background-repeat: no-repeat; content: ""; display: block; height: 6px; margin-bottom: 8px; position: relative; top: 12px; width: 90px;}
+.faq h3 { font-size: 24px; font-weight: 300; line-height: normal; margin: 0; letter-spacing: -2px; padding: 0 0 25px;}
+.faq .header-p {margin-top: 15px;}
+.faq .panel-body  > p { margin: 0px;}
+
+/*--------------------------------------------*/
+/* Styling blog                               */
+/*--------------------------------------------*/
+.blog-wrapper {padding-top: 35px; padding-bottom: 0px; line-height: 20px;}
+article { margin-bottom: 15px !important; padding-bottom: 35px;}
+.entry-title { margin-bottom: 15px !important;}
+.page-header { border: medium none; margin: 0 0 20px; padding-bottom: 10px;}
+.entry-meta.muted { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); border: 2px solid #f7b926; border-radius: 50px; color: #000; font-size: 12px; margin-bottom: 15px; padding: 15px; position: relative;}
+.entry-meta.muted > span, .entry-meta.muted > time { font-size: 14px; margin: 0 5px;}
+.create-date { background: none repeat scroll 0 0 #f7b926; border-radius: 50px 0 0 50px; color: #fff; font-family: "Montserrat Alternates",sans-serif; margin-left: -16px !important; padding: 18px 25px;}
+.create-date .day { font-size: 18px;}
+.create-date .month { font-size: 18px;}
+.create-date .year { color: #000;}
+.category-name { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.entry-content { margin-bottom: 25px;}
+.entry-content-bottom-zero { margin-bottom: 0px;}
+.taxi { border-radius: 50px;}
+.entry-content p { color: #000; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.clearfix::after { clear: both;}
+.clearfix::before, .clearfix::after { content: ""; display: table; line-height: 0;}
+.footer .entry-meta { margin-top: 15px;}
+.readmore { color: #000; margin-top: 15px; bottom: 30px; padding: 10px 20px;  background: transparent; border: 2px solid #000; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; color: #000 !important; text-shadow: none; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.readmore:hover, .readmore:focus { background: #000; color: #fff !important;}
+ul.pagenav, ul.pagination { color: #000 !important; list-style: outside none none; margin-left: 0; margin-top: 10px; overflow: hidden; padding: 0; background: transparent; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.pager {margin-bottom: 0px;}
+.pager li > a, .pagination li > a, .pager li > span, .pagination li > span { color: #000 !important; border: 2px solid #000; background: transparent; border-radius: 50px;}
+.pagination > .active > a, .pagination > .active > a:hover, .pager li > a:hover, .pagination li > a:hover, .pager li > span:hover, .pagination li > span:hover { background-color: #000; border-color: #000; color: #fff !important;}
+.pull-right { margin-top: 0;}
+.counter { margin-top: 25px !important; color: #000;	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+.blog-wrapper ul { padding-left: 0 !important;}
+.pagination > li:first-child > a, .pagination > li:first-child > span { border-bottom-left-radius: 50px; border-top-left-radius: 50px;}
+.pagination > li:last-child > a, .pagination > li:last-child > span { border-bottom-right-radius: 50px; border-top-right-radius: 50px;}
+
+/*--------------------------------------------*/
+/* Styling buttons                            */
+/*--------------------------------------------*/
+.breadcrumb-wrapper { background: none repeat scroll 0 0 #f7b926; color: white; display: block; padding: 15px 0; text-align: center;}
+.breadcrumb { background-color: #f7b926; margin-bottom: 0px;}
+.breadcrumb > .active { color: #fff;}	
+.breadcrumb > li + li::before { color: #fff; content: "/ "; padding: 0 5px;}	
+.breadcrumb a:not(.btn) { color: #fff;}
+.breadcrumb a:hover:not(.btn) { color: #000;}
+
+/*--------------------------------------------*/
+/* Styling icons                              */
+/*--------------------------------------------*/
+.tm-icons {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+/*--------------------------------------------*/
+/* Styling typography                         */
+/*--------------------------------------------*/
+.dropcap::first-letter { color: #666; display: block; float: left; font-family: Montserrat Alternates; font-size: 40px; line-height: 40px; padding: 4px 8px 0 0;}
+.dropcap { overflow: hidden;}
+
+ul.arrow, ul.arrow-double, ul.tick, ul.cross, ul.star, ul.rss, ul.spot { list-style: outside none none; margin: 0; padding: 0; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+ul.arrow li::before,
+ul.arrow li::after,
+ul.arrow-double li::before,
+ul.arrow-double li::after,
+ul.tick li::before,
+ul.tick li::after,
+ul.cross li::before,
+ul.cross li::after,
+ul.star li::before,
+ul.star li::after,
+ul.rss li::before,
+ul.rss li::after { font-family: FontAwesome; font-size: 11px;}
+ul.spot { list-style: none; padding: 0; margin: 0;}
+ul.spot li::before,
+ul.spot li::after { font-family: FontAwesome; font-size: 18px;}
+ul.arrow li::before,
+ul.arrow-double li::before,
+ul.tick li::before,
+ul.cross li::before,
+ul.star li::before,
+ul.rss li::before,
+ul.spot li::before { margin-right: 5px;}
+ul.arrow li::before { content: "\f105";}
+ul.arrow-double li::before { content: "\f101";}
+ul.tick li::before { content: "\f00c";}
+ul.cross li::before { content: "\f00d";}
+ul.star li::before { content: "\f006";}
+ul.rss li::before { content: "\f09e";}
+ul.spot li::before { content: "\f164";}
+ol.arrow, ol.arrow-double, ol.tick, ol.cross, ol.star, ol.rss, ol.spot { list-style: outside none none; margin: 0; padding: 0; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;}
+ol.arrow li::before,
+ol.arrow li::after,
+ol.arrow-double li::before,
+ol.arrow-double li::after,
+ol.tick li::before,
+ol.tick li::after,
+ol.cross li::before,
+ol.cross li::after,
+ol.star li::before,
+ol.star li::after,
+ol.rss li::before,
+ol.rss li::after { font-family: FontAwesome;  font-size: 11px;}
+ol.spot { list-style: none;  padding: 0;  margin: 0;}
+ol.spot li::before,
+ol.spot li::after { font-family: FontAwesome; font-size: 18px;}
+ol.arrow li::before,
+ol.arrow-double li::before,
+ol.tick li::before,
+ol.cross li::before,
+ol.star li::before,
+ol.rss li::before,
+ol.spot li::before { margin-right: 5px;}
+ol.arrow li::before { content: "\f105";}
+ol.arrow-double li::before { content: "\f101";}
+ol.tick li::before { content: "\f00c";}
+ol.cross li::before { content: "\f00d";}
+ol.star li::before { content: "\f006";}
+ol.rss li::before { content: "\f09e";}
+ol.spot li::before { content: "\f164";}
+.blocknumber { position: relative; min-height: 45px;}
+.blocknumber span { font-weight: bold; width: 48px; height: 48px; line-height: 48px; display: block; text-align: center; position: absolute; top: 0; margin: 0px -60px;}
+.blocknumber span.rounded { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.blocknumber span.circle { -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; padding: 0;}
+.blocknumber-ltr { padding: 5px 0 5px 60px; left: 0;}
+
+/*--------------------------------------------*/
+/* Styling sidebar                            */
+/*--------------------------------------------*/
+.white-space {display: block; width: 100%;}
+.white-space.space-sm { padding:3px 0;}
+.with-sidebar { overflow: hidden;}
+.with-sidebar .sidebar:before{ content: "";  display: block;  height: 4000px;  position: absolute; width: 1px;}
+.sidebar.sidebar-right:before{ margin-left:-8px;}
+.sidebar.sidebar-left:before{ right:7px;}
+.sidebar.sidebar-right .sidebar-content{ position:relative; padding-left:35px;}
+.sidebar.sidebar-left .sidebar-content{ position:relative; padding-right:15px;}
+.sidebar-widget { margin-bottom:40px;}
+
+/*--------------------------------------------*/
+/* Styling Off Canvas Menu                    */
+/*--------------------------------------------*/
+#offcanvas-toggler {
+  float: right;
+}
+#offcanvas-toggler >i {
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  background: transparent;
+  margin: 5px 0 27px 0;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-transition: color 400ms, background-color 400ms;
+  -o-transition: color 400ms, background-color 400ms;
+  transition: color 400ms, background-color 400ms;
+}
+#offcanvas-toggler >i:hover {
+  color: #fff;
+}
+.close-offcanvas {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  color: #000;
+  border: 2px solid #eee;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+}
+.close-offcanvas:hover {
+  background: #000;
+  color: #fff;
+}
+.offcanvas-menu {
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  color: #999;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+.offcanvas-menu .offcanvas-inner {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.offcanvas-menu .offcanvas-inner {
+  margin-top: 20px;
+}
+.offcanvas-menu .offcanvas-inner ul > li {
+  border: none;
+}
+.offcanvas-menu .offcanvas-inner ul > li a {
+  border-bottom: 1px dotted #e8e8e8;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  padding: 4px 20px;
+}
+.offcanvas-menu .offcanvas-inner  ul > li a:hover {
+  background: #f5f5f5;
+}
+.offcanvas-menu .offcanvas-inner  ul > li >a:before {
+  display: none;
+}
+.offcanvas-menu .offcanvas-inner :first-child {
+  margin-top: 0;
+}
+.offcanvas-menu .offcanvas-inner  > ul {
+  margin: 0 -20px;
+}
+.offcanvas-menu {
+  -webkit-transition: opacity 400ms cubic-bezier(0.7,0,0.3,1), right 400ms cubic-bezier(0.7,0,0.3,1);
+  transition: opacity 400ms cubic-bezier(0.7,0,0.3,1), right 400ms cubic-bezier(0.7,0,0.3,1);
+}
+.body-wrapper:after {
+  right: 0;
+}
+.offcanvas-menu {
+  right: -280px;
+}
+.offcanvas .offcanvas-menu {
+  right: 0;
+}
+.body-wrapper:after {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0,0.8);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  z-index: 999;
+}
+.offcanvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.offcanvas .body-wrapper:after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.offcanvas .offcanvas-menu {
+  opacity: 1;
+}
+.menu .nav-child.small {
+  font-size: 12px;
+}
+.offcanvas-menu {
+  color: #fff;
+  background: #404040;
+}
+.offcanvas-menu .offcanvas-inner ul > li a {
+  color: #fff;
+  border-bottom: 1px dashed #404040;
+}
+.offcanvas-menu .offcanvas-inner ul > li a:hover {
+  color: #f7b926;
+  background: #404040;
+}
+
+
